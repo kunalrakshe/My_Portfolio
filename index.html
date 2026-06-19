@@ -1,235 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>kunal Rakshe | Data Analyst Portfolio</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="Style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Rakshe | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
 
+<header class="header">
+  <a href="#" class="logo">PORTFOLIO<span>.</span></a>
 
-<nav class="navbar navbar-expand-lg shadow-sm fixed-top">
-<div class="container">
-<a class="navbar-brand fw-bold text-warning" href="#">Portfolio</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navMenu">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-<li class="nav-item">
-<button class="btn btn-sm btn-warning ms-3" onclick="document.body.classList.toggle('dark-mode')">🌙 Toggle Mode</button>
-</li>
-</ul>
-</div>
-</div>
-</nav>
+  <nav class="nav" id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
 
-<section id="home" class="hero">
-<canvas id="dataCanvas"></canvas>
-<div class="container content" data-aos="fade-up" data-aos-duration="1000">
-<h5 class="mb-3" id="typing-text"></h5>
-<h1 class="display-4 fw-bold">Hi, I'm Kunal Rakshe</h1>
-<p class="lead">Data Analyst | Fresher</p>
-<img src="https://www.image2url.com/r2/default/images/1781327534439-d11936be-1fd8-4ff0-962a-dc89544ef876.jpg"  alt="Kunal Rakshe" class="img-fluid rounded-circle shadow">
-<br>
-<a class="btn btn-warning btn-lg mt-3" href="#projects">
-<i class="fas fa-chart-bar me-2"></i>View My Dashboards
-</a>
-</div>
-</section>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">Data Analyst • Excel • Power BI • SQL • Python
+    </p>
+    <h1>Hi, I'm <span>Kunal Rakshe</span></h1>
+    <h2>Data Analyst | Fresher</h2>
+    <p>
+      I transform raw data into clear business insights using Power BI,
+      SQL, Excel, and Python.
+    </p>
 
-<section id="about">
-<div class="container text-center">
-<h2 class="fw-bold mb-4" data-aos="fade-up">
-<i class="fas fa-user-circle text-warning"></i> About Me
-</h2>
-<div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_touohxv0.json" background="transparent" speed="1" style="width:250px; max-width:100%;" loop autoplay></lottie-player>
-</div>
-<p class="lead col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="400">
-Hello! I’m Kunal Nitin Rakshe, an Computer Science and Engineering(AIML) passionate about leveraging technology for impactful solutions. Proficient in Power BI, **SQL, and **Excel, I specialize in transforming data into actionable insights. Connect with me on LinkedIn to explore collaborations.
-</p>
-</div>
-</section>
-
-<section id="skills" class="py-5 bg-light">
-<div class="container text-center">
-<h2 class="fw-bold mb-3 aos-init aos-animate" data-aos="fade-up">
-<i class="bi bi-bar-chart-line-fill text-warning"></i> My Skills
-</h2>
-<p class="text-muted mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">A snapshot of the tools I use to turn raw data into actionable insights</p>
-<hr class="w-25 mx-auto mb-5 aos-init aos-animate" style="height:3px; background-color:#f1c40f; border:none;" data-aos="zoom-in" data-aos-delay="200">
-<div class="row align-items-center">
-<div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="300">
-<lottie-player id="skillsLottie" src="https://assets1.lottiefiles.com/packages/lf20_x17ybolp.json" background="transparent" speed="1" style="width: 100%; max-width: 400px; height:auto;" loop=""></lottie-player>
-</div>
-<div class="col-md-6 text-start">
-<h6 data-aos="fade-left" data-aos-delay="400" class="aos-init aos-animate">Power BI</h6>
-<div class="progress mb-3 aos-init aos-animate" data-aos="fade-left" data-aos-delay="500">
-<div class="progress-bar bg-warning skill-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-</div>
-<h6 data-aos="fade-left" data-aos-delay="600" class="aos-init aos-animate">SQL</h6>
-<div class="progress mb-3 aos-init aos-animate" data-aos="fade-left" data-aos-delay="700">
-<div class="progress-bar bg-success skill-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-</div>
-<h6 data-aos="fade-left" data-aos-delay="800" class="aos-init aos-animate">Excel</h6>
-<div class="progress mb-3 aos-init aos-animate" data-aos="fade-left" data-aos-delay="900">
-<div class="progress-bar bg-primary skill-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section id="certifications">
-<div class="container text-center">
-<h2 class="fw-bold mb-5 aos-init aos-animate" data-aos="fade-up">Certifications</h2>
-<div class="row g-4">
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-<div class="card p-3 text-center certification-card h-100">
-<i class="fas fa-certificate fa-2x text-warning mb-3"></i>
-<h5> Power BI for Data Analyst </h5>
-<p>Validated skills in building data models, DAX, and creating reports.</p>
-<a href="https://drive.google.com/file/d/1XJIgBPx7J92-oZDVVphOTCN1uQ12GdiT/view?usp=drivesdk" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Certificate</a>
-</div>
-</div>
-
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-<div class="card p-3 text-center certification-card h-100">
-<i class="fas fa-award fa-2x text-primary mb-3"></i>
-<h5>SQL for Data Analysis</h5>
-<p>Hands-on certification covering SQL queries, joins, and analytics functions.</p>
-<a href="https://drive.google.com/file/d/1m7bGlYjPo7I0-h_Nvv1dLVv90h5_EKmA/view?usp=drivesdk" target="_blank" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Certificate</a>
-</div>
-</div>
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-<div class="card p-3 text-center certification-card h-100">
-<i class="fas fa-graduation-cap fa-2x text-success mb-3"></i>
-<h5>Excel &amp; Data Visualization</h5>
-<p>Certified in advanced Excel techniques and data visualization fundamentals.</p>
-<a href="https://drive.google.com/file/d/1Yq3x0LtYNxft4x-RfWhsmTvuxCZts7FG/view?usp=drivesdk" target="_blank" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Certificate</a>
-</div>
-</div>
-
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-<div class="card p-3 text-center certification-card h-100">
-<i class="fas fa-graduation-cap fa-2x text-success mb-3"></i>
-<h5>Microsoft Excel Foundations for Data Analytics &amp; </h5> 
-<p>Successfully completed the "Introduction to MS Excel" course by Microsoft and Simplilearn SkillUp. Gained foundational knowledge of Excel, including data entry, formatting, formulas, functions, sorting, filtering, and basic data analysis techniques.</p>
-<a href="https://drive.google.com/file/d/1z6CdFjdQIHPmmrD5MDDKMTjJJaTSWMHs/view?usp=drivesdk" target="_blank" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Certificate</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section id="projects" class="py-5 bg-light">
-<div class="container">
-<h2 class="fw-bold mb-5 text-center aos-init aos-animate" data-aos="fade-up">Projects</h2>
-<div class="row g-4">
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-<div class="card p-3 text-center h-100 shadow-sm project-card">
-<i class="fas fa-chart-pie fa-3x text-info mb-3"></i>
-<h5> Business Insight 360</h5> 
-<p>
-Designed interactive dashboards for 5 departments using Power BI, enabling stakeholders to gain real-time insights into KPIs. The project projected 10% revenue growth and 20% data-related expense reduction.
-</p>
-<a href=https://app.powerbi.com/view?r=eyJrIjoiNGRlMDI1NTUtYjI1Yi00MzFmLTkwNzMtZjIwZjZhNDY4NWIxIiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9 target="_blank" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Project</a>
-</div>
-</div>
-
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-<div class="card p-3 text-center h-100 shadow-sm project-card">
-<i class="fas fa-uber logo fa-3x text-warning mb-3"></i>
-<h5> UBER Mobility & Ride-Hailing Analytics</h5>
-<p>
-Converted raw ride-level data into actinable insights on revenue,consumer behavior, and geographic trends using Power BI.
-</p>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiNTc4OWQzMjEtZDkyYy00MWQ5LTgwNDUtZmVjYzFkMGRmOGEzIiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9" target="_blank" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Project</a>
-</div>
-</div>
-
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-<div class="card p-3 text-center h-100 shadow-sm project-card">
-<i class="fas fa-boxes-stacked fa-3x text-primary mb-3"></i>
-<h5> ATLIQ Mart Supply chain Analysis</h5>
-<p>
-Analyzed inventory, order fulfillment, and delivery performance to identify supply chain bottlenecks and improve operational efficiency.
-</p>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiY2QzYjcyMWEtMTg1NC00NmU5LWJlMTEtNGJmOTkzMWJiMjM2IiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9" target="_blank" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Project</a>
-</div>
-</div>
-
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-<div class="card p-3 text-center h-100 shadow-sm project-card">
-<i class="fas fa-shopping-cart fa-3x text-danger mb-3"></i>
-<h5> BLINKIT Sales Analysis</h5>
-<p>
-Analyzed sales performance, top categories, and revenue insights.
-</p>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiNDIyZDY0MDItYmFlNC00Y2I1LTlkNTgtMzQ0M2VmMzNkMWVkIiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9" target="_blank" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Project</a>
-</div>
-</div>
-
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-<div class="card p-3 text-center h-100 shadow-sm project-card">
-<i class="fas fa-hotel fa-3x text-success mb-3"></i>
-<h5> Hospitality Dashboard</h5>
-<p>
-Visualized hotel performance, occupancy rates, guest satisfaction and revenue trends through interactive dashboards.
-</p>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiMDU3NjM3YTItMjRiNy00NjM3LTk4ZTktOWUzNTAxZTNlYmRlIiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9" target="_blank" class="btn btn-sm btn-warning mt-2"><i class="fas fa-external-link-alt me-1"></i> View Project</a>
-</div>
-</div>
-
-
-
-<section id="contact" class="py-5">
-    <div class="container text-center">
-        <h3 class="animated-header mb-4" data-aos="fade-up"><span id="data-keywords"></span><span class="cursor">|</span></h3>
-        <p id="contact-message" class="lead mb-4" data-aos="fade-up" data-aos-delay="100"></p>
-        <div class="d-flex flex-column align-items-center gap-3 mt-4">
-            
-            <p class="contact-item" data-aos="fade-up" data-aos-delay="200">
-                <a href="mailto:rakshekunal2@gmail.com" class="text-decoration-none text-dark">
-                    <i class="fas fa-envelope text-warning me-2"></i>rakshekunal2@gmail.com
-                </a>
-            </p>
-            
-            <p class="contact-item" data-aos="fade-up" data-aos-delay="300">
-                <a href="tel:+918850241720" class="text-decoration-none text-dark">
-                    <i class="fas fa-phone-alt text-warning me-2"></i>(+91) 8850241720
-                </a>
-            </p>
-            
-            <div class="d-flex gap-3">
-                <a href="https://www.linkedin.com/in/kunal-rakshe-128a38318/" target="_blank" class="btn btn-outline-primary" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
-                <a href="https://github.com/kunalrakshe" target="_blank" class="btn btn-outline-dark" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-github me-2"></i>Github</a>
-            </div>
-        </div>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
     </div>
+  </div>
+
+  <div class="hero-photo">
+    <img src="https://www.image2url.com/r2/default/images/1781327534439-d11936be-1fd8-4ff0-962a-dc89544ef876.jpg" alt="Kunal Rakshe" />
+  </div>
 </section>
 
-    <footer class="text-center py-3 mt-5 border-top">
-        <p>© 2026 Kunal Rakshe — Data Analyst (Fresher)</p>
-    </footer>
+<section class="section" id="about">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    Hello! I’m Kunal Nitin Rakshe, a Computer Science and Engineering(AIML)
+    student passionate about leveraging technology for impactful solutions.
+    Proficient in Power BI, SQL, and Excel, I specialize in transforming data
+    into actionable insights. Connect with me on LinkedIn to explore collaborations.
+  </p>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<section class="section" id="skills">
+  <h2 class="section-title">My Skills</h2>
+  <p class="section-subtitle">A snapshot of the tools I use to turn raw data into actionable insights</p>
 
-    <script src="Script.js"></script>
-    
- 
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Power BI</h3>
+      <div class="bar"><span style="width:90%"></span></div>
+      <p>90%</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>SQL</h3>
+      <div class="bar"><span style="width:85%"></span></div>
+      <p>85%</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Excel</h3>
+      <div class="bar"><span style="width:80%"></span></div>
+      <p>80%</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Python</h3>
+      <div class="bar"><span style="width:75%"></span></div>
+      <p>75%</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="certifications">
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="card-grid">
+    <div class="info-card">
+      <h3>Power BI for Data Analyst</h3>
+      <p>Validated skills in building data models, DAX, and creating reports.</p>
+      <a href="https://drive.google.com/file/d/1XJIgBPx7J92-oZDVVphOTCN1uQ12GdiT/view?usp=drivesdk">View Certificate</a>
+    </div>
+
+    <div class="info-card">
+      <h3>SQL for Data Analysis</h3>
+      <p>Hands-on certification covering SQL queries, joins, and analytics functions.</p>
+      <a href="https://drive.google.com/file/d/1m7bGlYjPo7I0-h_Nvv1dLVv90h5_EKmA/view?usp=drivesdk" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="info-card">
+      <h3>Excel & Data Visualization</h3>
+      <p>Certified in advanced Excel techniques and data visualization fundamentals.</p>
+      <a href="https://drive.google.com/file/d/1Yq3x0LtYNxft4x-RfWhsmTvuxCZts7FG/view?usp=drivesdk">View Certificate</a>
+    </div>
+
+    <div class="info-card">
+      <h3>Microsoft Excel Foundations</h3>
+      <p>Completed Introduction to MS Excel by Microsoft and Simplilearn SkillUp.</p>
+      <a href="https://drive.google.com/file/d/1z6CdFjdQIHPmmrD5MDDKMTjJJaTSWMHs/view?usp=drivesdk">View Certificate</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="card-grid">
+    <div class="project-card">
+      <span>Power BI</span>
+      <h3>Business Insight 360</h3>
+      <p>Designed dashboards for 5 departments with real-time KPI insights.</p>
+      <a href=https://app.powerbi.com/view?r=eyJrIjoiNGRlMDI1NTUtYjI1Yi00MzFmLTkwNzMtZjIwZjZhNDY4NWIxIiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9>View Project</a>
+    </div>
+
+    <div class="project-card">
+      <span>Analytics</span>
+      <h3>UBER Mobility & Ride-Hailing Analytics</h3>
+      <p>Converted raw ride-level data into actionable revenue and customer insights.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiNTc4OWQzMjEtZDkyYy00MWQ5LTgwNDUtZmVjYzFkMGRmOGEzIiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <span>Supply Chain</span>
+      <h3>ATLIQ Mart Supply Chain Analysis</h3>
+      <p>Analyzed inventory, fulfillment, and delivery performance.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiY2QzYjcyMWEtMTg1NC00NmU5LWJlMTEtNGJmOTkzMWJiMjM2IiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <span>Sales</span>
+      <h3>BLINKIT Sales Analysis</h3>
+      <p>Analyzed sales performance, top categories, and revenue insights.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiNDIyZDY0MDItYmFlNC00Y2I1LTlkNTgtMzQ0M2VmMzNkMWVkIiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <span>Dashboard</span>
+      <h3>Hospitality Dashboard</h3>
+      <p>Visualized occupancy, guest satisfaction, and revenue trends.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiMDU3NjM3YTItMjRiNy00NjM3LTk4ZTktOWUzNTAxZTNlYmRlIiwidCI6ImFjODI5MmNlLTE2ZWEtNGI3Mi1hZGE0LTY0OTJjYzM0OTNlYyJ9">View Project</a>
+    </div>
+  </div>
+</section>
+<section class="section contact" id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <p>
+    <a href="mailto:rakshekunal2@gmail.com">
+      <i class="fa-solid fa-envelope"></i>
+      rakshekunal2@gmail.com
+    </a>
+  </p>
+
+  <p>
+    <a href="tel:+918850241720">
+      <i class="fa-solid fa-phone"></i>
+      (+91) 8850241720
+    </a>
+  </p>
+
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/kunal-rakshe-128a38318" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+      LinkedIn
+    </a>
+
+    <a href="https://github.com/kunalrakshe" target="_blank">
+      <i class="fa-brands fa-github"></i>
+      GitHub
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Kunal Rakshe — Data Analyst</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
